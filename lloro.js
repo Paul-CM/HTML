@@ -4,6 +4,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     const fullName = document.getElementById("fullName").value;
     const age = document.getElementById("age").value;
     const nationality = document.getElementById("nationality").value;
+    const correo = document.getElementById("correo").value;
 
     if (age < 18) {
         alert("Debe ser mayor de 18 años para inscribirse.");
@@ -21,6 +22,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
         <td>${fullName}</td>
         <td>${age}</td>
         <td>${nationality}</td>
+        <td>${correo}</td>
     `;
 
     tableBody.appendChild(newRow);
